@@ -1,0 +1,25 @@
+{
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "src/**/*.test.tsx"],
+  "extends": "@snowpack/app-scripts-react/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "public/*": ["public/*"]
+    },
+    "module": "esnext",
+    "jsx": "react",
+    "noEmit": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost"
+    ]
+  }
+}
